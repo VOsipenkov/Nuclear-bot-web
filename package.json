@@ -1,0 +1,21 @@
+{
+  "name": "nuclear-bot-web",
+  "version": "1.0.0",
+  "description": "Frontend for nuclear bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/css": "^0.11.0",
+    "@eslint/js": "^9.35.0",
+    "@eslint/json": "^0.13.2",
+    "eslint": "^9.35.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.4.0"
+  }
+}
