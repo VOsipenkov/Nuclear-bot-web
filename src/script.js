@@ -39,4 +39,4 @@ class AutoSlider extends Slider {
 const autoslider = new AutoSlider(800, 600, 10, true);
 autoslider.whoAmI();
 
-export {button, Slider, AutoSlider};
+export {button as btn, Slider, AutoSlider};
