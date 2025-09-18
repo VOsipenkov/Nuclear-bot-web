@@ -1,13 +1,42 @@
-const startBtn = document.getElementById('startBtn');
-const stopBtn = document.getElementById('stopBtn');
-const statusDiv = document.getElementById('status');
+function button(){
+    return "button";
+}
 
-startBtn.addEventListener('click', () => {
-    statusDiv.textContent = 'Бот запущен!';
-    statusDiv.style.color = 'green';
-});
+class Slider {
+    constructor(width, height, counter) {
+        this.width = width;
+        this.height = height;
+        this.counter = counter;
+    }
 
-stopBtn.addEventListener('click', () => {
-    statusDiv.textContent = 'Бот остановлен!';
-    statusDiv.style.color = 'red';
-});
+    nextSlide(){
+        console.log("Move forward");
+    }
+
+    prevSlide(){
+        console.log("Move backward");
+    }
+
+    whoAmI(){
+        console.log(`Width: ${this.width}, Height: ${this.height}, Counter: ${this.counter}`);
+    }
+}
+
+const slider = new Slider(600, 400, 5);
+slider.whoAmI();
+
+class AutoSlider extends Slider {
+    constructor(width, height, counter, auto) {
+        super(width, height, counter);
+        this.auto = auto;
+    }
+
+    play(){
+        console.log(`Auto play is ${this.auto}`);
+    }
+}
+
+const autoslider = new AutoSlider(800, 600, 10, true);
+autoslider.whoAmI();
+
+export {button, Slider, AutoSlider};
