@@ -1,5 +1,4 @@
-import { btn, Slider } from "./script";
+"use strict";
 
-const slider = new Slider(1024, 768, 3);
-
-
+var _script = require("./script");
+const slider = new _script.Slider(1024, 768, 3);
