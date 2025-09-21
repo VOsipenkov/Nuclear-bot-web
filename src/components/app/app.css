@@ -1,0 +1,153 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Заголовок приложения */
+.app-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.app-header h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* Форма добавления поста */
+.bottom-panel {
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid #e1e5e9;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  gap: 10px;
+}
+
+.new-post-label {
+  border: 2px solid #e9ecef;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.new-post-label:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.btn-outline-secondary {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #6c757d;
+  background: transparent;
+  color: #6c757d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background: #6c757d;
+  color: white;
+}
+
+/* Список постов */
+.app-list {
+  padding: 0 1.5rem;
+}
+
+.app-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Стили для PostListItem (пример, если ты его создашь) */
+.post-item {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 10px;
+  border: 1px solid #e1e5e9;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.post-item h4 {
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+}
+
+.post-item p {
+  color: #718096;
+  margin-bottom: 1rem;
+}
+
+.post-item .btn-sm {
+  font-size: 0.875rem;
+  padding: 4px 10px;
+}
+
+/* Поле поиска */
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .app-header {
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .bottom-panel {
+    flex-direction: column;
+  }
+
+  .btn-outline-secondary {
+    width: 100%;
+  }
+}
