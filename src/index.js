@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './components/app';
-import reportWebVitals from './reportWebVitals';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 class WhoAmI extends Component{
   constructor(props){
@@ -43,6 +43,6 @@ const All = () => {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <All/>
+    <App/>
   </React.StrictMode>
 );
